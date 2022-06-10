@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: build a docker image
-        run: docker_build . --file Dockerfile --tag matteoserrazanetti/notebook 
+        run: docker build . --file Dockerfile --tag matteoserrazanetti/notebook 
 
       # Runs a set of commands using the runners shell
       - name: push the image on Dockerhub
